@@ -1,12 +1,12 @@
 {
   "name": "elliptical-notification",
   "description": "notification service layer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ellipticaljs/elliptical-notification.git"
+    "url": "https://github.com/ellipticaljs/notification.git"
   },
   "dependencies":{
     "elliptical-class": "git+https://github.com/ellipticaljs/class.git"

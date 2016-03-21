@@ -1,7 +1,7 @@
 {
   "name": "elliptical-notification",
   "description": "notification service layer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "",
   "authors": [
     "S. Francis"
@@ -12,7 +12,7 @@
     "notification"
   ],
   "moduleType": [],
-  "homepage": "https://github.com/ellipticaljs/elliptical-notification",
+  "homepage": "https://github.com/ellipticaljs/notification",
   "ignore": [
     "**/.*",
     "node_modules",
