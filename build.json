@@ -1,0 +1,6 @@
+[
+  "./lib/dialog.js",
+  "./lib/notify.js",
+  "./lib/dialogProvider.js",
+  "./lib/notifyProvider.js"
+]
