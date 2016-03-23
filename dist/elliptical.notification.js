@@ -332,7 +332,7 @@
         },
 
         _throwWarning:function(){
-            console.warning('no dialog element avialable');
+            console.warn('no dialog element available');
         }
 
     },{});
@@ -434,7 +434,7 @@
          * @private
          */
         _throwWarning:function(){
-            console.warning('no notify element avialable');
+            console.warn('no notify element available');
         }
 
     },{});
