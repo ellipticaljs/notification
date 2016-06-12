@@ -1,7 +1,7 @@
 {
   "name": "elliptical-notification",
   "description": "notification service layer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "",
   "authors": [
     "S. Francis"
@@ -42,6 +42,6 @@
   "dependencies": {
     "elliptical-class": "~1.0.7",
     "paper-toast": "~1.2.1",
-    "md-dialog": "~1.1.1"
+    "md-dialog": "~1.2.0"
   }
 }
