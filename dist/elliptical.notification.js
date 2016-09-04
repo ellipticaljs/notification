@@ -197,6 +197,8 @@
                 this.constructor["@resource"]=name;
                 this.constructor.$provider=provider;
             }
+            
+            this.queuedFlag=false;
         },
 
         /**
@@ -212,11 +214,42 @@
 
         /**
          *
+         * @param text {string}
+         * @param params {object}
+         * @param delay {number}
+         */
+        showOnDelay:function(text,params,delay){
+            var self=this;
+            if(delay===undefined) delay=750;
+            this.queuedFlag=true;
+            setTimeout(function(){
+                if(self.queuedFlag) {
+                    self.queuedFlag=false;
+                    self.show(text,params);
+                }
+            },delay)
+        },
+
+        /**
+         *
          * @returns {*}
          * @public
          */
         hide:function(){
             return this.constructor.hide();
+        },
+
+        /**
+         *  @public
+         */
+        hideOnDelay:function(){
+            var self=this;
+            if(!this.queuedFlag) {
+                setTimeout(function(){
+                    self.hide();
+                },1000);
+            }
+            this.queuedFlag=false;
         },
 
         /**
