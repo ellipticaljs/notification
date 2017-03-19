@@ -75,6 +75,10 @@
       return this.$provider.hideAction(bool);
     },
 
+    removeAction:function(){
+      return this.$provider.removeAction();
+    },
+
     disableModal:function(bool){
       return this.$provider.disableModal(bool);
     },
@@ -156,6 +160,10 @@
 
     hideAction:function(bool){
       return this.constructor.hideAction(bool);
+    },
+
+    removeAction:function(){
+      return this.constructor.removeAction();
     },
 
     disableModal:function(bool){
@@ -407,6 +415,12 @@
     hideAction:function(bool){
       var element = this._getElement();
       if(element) element.hideAction=bool;
+      else this._throwWarning();
+    },
+
+    removeAction:function(){
+      var element = this._getElement();
+      if(element) element.removeAction();
       else this._throwWarning();
     },
 
